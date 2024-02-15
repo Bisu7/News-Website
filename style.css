@@ -1,0 +1,93 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+body{
+    background-color: antiquewhite;
+}
+img{
+    object-fit: cover;
+    width: 100%;
+}
+.heading{
+    padding: 5px;
+    color: rgb(240, 251, 255);
+    background-color: rgb(86, 167, 213);
+    width: 100%;
+    top: 0;
+    text-align: center;
+}
+.heading h1{
+    font-weight: 1000;
+    font-size: 40px;
+    letter-spacing: 3px;
+}
+.options-container{
+    margin: 2em 0 2em 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+    text-align: center;
+}
+.option{
+    border: 1;
+    cursor: pointer;
+    padding: 0.8em 1.5em;
+    border-radius: 0.5em;
+    border-color: black;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-column-gap: 1em;
+}
+.card{
+    display: grid;
+    position: relative;
+    grid-template-rows: auto 1fr;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.468);
+    margin: 1em 0;
+    border-radius: 10px;
+}
+.card img{
+    border-radius: 10px;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1em;
+    font-size: 15px;
+}
+.title{
+    font-weight: 500;
+    color: black;
+}
+.description{
+    color: #6f6f6f;
+    text-align: justify;
+    margin: 0.8em 0 1em 0;
+}
+.view-button{
+    position: relative;
+    text-decoration: none;
+    background-color: rgb(86, 167, 213);
+    color: antiquewhite;
+    text-align: center;
+    border-radius: 3px;
+}
+.active{
+    background-color:rgba(255, 0, 0, 0.471);
+    color: antiquewhite;
+}
+@media only screen and (max-width: 768px){
+    .container{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
